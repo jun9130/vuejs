@@ -10,23 +10,13 @@
   <script src="vue.js"></script>
   
   <div id="app">
-    <p>{{message}}</p>
-    <p>{{number + 3}}</p>
-    <p>{{ok?'YES' : 'NO'}}</p>
-    <p>{{sayHi()}}</p>
+    <a :href="url">Google</a>
   </div>
   <script>
     new Vue({
       el: "#app",
       data: {
-        message: "HelloWorld!",
-        number: 3,
-        ok: true
-      },
-      methods: {
-        sayHi: function(){
-          return 'Hi';
-        }
+        url: "https://www.google.com"
       }
     });
   </script>
