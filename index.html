@@ -10,15 +10,21 @@
   <script src="vue.js"></script>
   
   <div id="app">
-    <a :href="url">Google</a>
+    <p>現在{{ number }}回クリックされています</p>
+    <button v-on:click="countUp">カウントアップ</button>
   </div>
   <script>
     new Vue({
       el: "#app",
       data: {
-        url: "https://www.google.com"
+        number: 0
+      },
+      methods: {
+        countUp: function() {
+          this.number += 1
+        }
       }
-    });
+    })
   </script>
 
 </body>
