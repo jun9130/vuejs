@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Vue.jsのサンプル</title>
 </head>
 <body>
-  <script src="vue.js"></script>
-  
   <div id="app">
-    <p>現在{{ number }}回クリックされています</p>
-    <button v-on:click="countUp">カウントアップ</button>
+    {{ message}}
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
-    new Vue({
+    var app = new Vue({
       el: "#app",
       data: {
-        number: 0
-      },
-      methods: {
-        countUp: function() {
-          this.number += 1
-        }
+          message: "こんにちは"
       }
-    })
+    });
   </script>
-
 </body>
 </html>
