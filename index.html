@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>分岐・ループ</title>
+  <title>Document</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <div id="app">
-    <!-- v-if ディレクティブ -->
-    <p v-if="error">エラーです</p>  
+    <p v-bind:class="error_class">エラーです</p>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+          el: "#app",
+          data: {
+            error_class: "error"
+          }
+      });
+    </script>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script>
-    let app = new Vue({
-        el: "#app",
-        data: {
-          error: true
-        }
-    });
-  </script>
 </body>
 </html>
