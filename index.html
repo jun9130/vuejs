@@ -4,47 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style> 
-  /* cssのアニメーション */
-    .flip-list-move {
-      transition: transform 1s;
+  <style>
+    .alert {
+      background-color: #fcc;
+      padding: 10px;
+      border: 1px solid #f33;
     }
   </style>
 </head>
 <body>
-<div id="app">
-  <button v-on:click="shuffle">シャッフル</button>
-  <transition-group name="flip-list">
-    <li v-for="pref in prefs" v-bind:key="pref.name">
-      {{pref.name}}
-    </li>
-  </transition-group>
-   
-</div>
-
-
-
+  <div id="app">
+    <alert-box>〇〇が入力されていません</alert-box>
+  </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
 <script>
-  let app = new Vue({
-      el: "#app",
-      data: {
-        prefs: [
-          { name: "北海道"},
-          { name: "青森県"},
-          { name: "岩手県"},
-          { name: "宮城県"},
-          { name: "秋田県"},
-          { name: "山形県"},
-          { name: "福島県"}
-        ]
-      },
-      methods: {
-        shuffle: function() {
-          this.prefs = _.shuffle(this.prefs);
-        }
+  Vue.component('alert-box', {
+    template: `
+    <div class="alert" v-on:click="caution">
+      <strong>Error!</strong>
+      <slot></slot>
+    </div>
+      `,
+    methods: {
+      caution: function() {
+        alert('クリックされました');
       }
+    }
+  });
+
+  let app = new Vue({
+      el: "#app"
   });
 </script>
 </body>
