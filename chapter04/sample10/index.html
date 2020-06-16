@@ -14,9 +14,8 @@
 
         <div class="frame__inner">
             <div id="app">
-                <clock>
-
-                </clock>
+                <clock> </clock>
+                <clock style="color: green">現在時刻</clock>
             </div>
         </div>
     </div>
@@ -37,7 +36,7 @@
                     this.time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
                 }
             },
-            template: '<div>{{ time }}</div>'
+            template: '<div :style=""><h2><slot>時計</slot></h2>{{ time }}</div>'
         })
 
         var app = new Vue({
