@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .alert {
-      background-color: #fcc;
-      padding: 10px;
-      border: 1px solid #f33;
-    }
-  </style>
-</head>
-<body>
-  <div id="app">
-    <alert-box>〇〇が入力されていません</alert-box>
-  </div>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script>
-  Vue.component('alert-box', {
-    template: `
-    <div class="alert" v-on:click="caution">
-      <strong>Error!</strong>
-      <slot></slot>
-    </div>
-      `,
-    methods: {
-      caution: function() {
-        alert('クリックされました');
-      }
-    }
-  });
+<html>
 
-  let app = new Vue({
-      el: "#app"
-  });
-</script>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <h1 class="frame__title">JavaScript</h1>
+
+        <div class="frame__inner">
+           <div id="app">
+            {{message}}
+           </div>
+        </div>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+      let app = new Vue ({
+        el: "#app", 
+        data: {
+          message: "Vue.js"
+        }
+      });
+    </script>
 </body>
+
 </html>
