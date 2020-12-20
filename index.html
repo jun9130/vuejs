@@ -27,7 +27,7 @@
 <body>
   <div class="box">
   <div id="app">
-    <p :class="vue_class">Vue</p>
+    <input type="number" v-model="number"> = {{number}}
   </div>
 </div>
 
@@ -35,12 +35,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-      let app = new Vue ({
-        el: '#app',
-        data: {
-          vue_class: 'vue'
-        }
-      });
+     var app = new Vue ({
+      el: '#app',
+      data: {
+        number: 100
+      }
+    })
     </script>
 </body>
 
