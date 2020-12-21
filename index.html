@@ -12,26 +12,19 @@
 </head>
 
 <body>
-  <div class="box">
   <div id="app">
-    <p class="alert" v-if="out_service">現在は営業時間外です。</p>
+    <ul v-for="i of 365" :key="i">
+      <li>{{i}}</li>
+    </ul>
   </div>
-</div>
+  
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-      const today = new Date();
-      let hour = today.getHours();
-
-
      let app = new Vue({
        el: "#app",
-       data: {
-         out_service: (hour > 20),
-
-       }
      })
     </script>
 </body>
