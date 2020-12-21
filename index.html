@@ -13,8 +13,8 @@
 
 <body>
   <div id="app">
-    <ul v-for="i of 365" :key="i">
-      <li>{{i}}</li>
+    <ul v-for="week of weeks" :key="week">
+      <li>{{week}}</li>
     </ul>
   </div>
   
@@ -23,8 +23,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-     let app = new Vue({
+     var app = new Vue({
        el: "#app",
+       data: {
+         weeks: ['月', '火', '水', '木', '金', '土', '日']
+       }
      })
     </script>
 </body>
