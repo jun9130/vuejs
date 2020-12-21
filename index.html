@@ -13,9 +13,7 @@
 
 <body>
   <div id="app">
-    <ul v-for="week of weeks" :key="week">
-      <li>{{week}}</li>
-    </ul>
+    <button v-on:click="checkClick" :disabled="clicked">決済する</button>
   </div>
   
 
@@ -26,7 +24,12 @@
      var app = new Vue({
        el: "#app",
        data: {
-         weeks: ['月', '火', '水', '木', '金', '土', '日']
+         clicked: false
+       },
+       methods: {
+         checkClick: function() {
+           this.clicked =true
+         }
        }
      })
     </script>
