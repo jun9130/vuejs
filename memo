@@ -13,3 +13,4 @@ let app = new Vue({
 
 v-bind
 v-model
+v-if
