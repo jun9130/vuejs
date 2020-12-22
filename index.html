@@ -13,23 +13,23 @@
 
 <body>
   <div id="app">
-    <button v-on:click="checkClick" :disabled="clicked">決済する</button>
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage">メッセージ反転</button>
   </div>
-  
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
      var app = new Vue({
-       el: "#app",
+       el: '#app',
        data: {
-         clicked: false
+         message: "Hello World"
        },
        methods: {
-         checkClick: function() {
-           this.clicked =true
-         }
+        reverseMessage: function() {
+          this.message = this.message.split('').reverse().join('')
+        }
        }
      })
     </script>
