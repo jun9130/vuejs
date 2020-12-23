@@ -14,22 +14,19 @@
 <body>
   <div id="app">
     <p>{{message}}</p>
-    <button v-on:click="reverseMessage">メッセージ反転</button>
+    <p>{{number * 5}}</p>
+
   </div>
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-     var app = new Vue({
+     new Vue( {
        el: '#app',
        data: {
-         message: "Hello World"
-       },
-       methods: {
-        reverseMessage: function() {
-          this.message = this.message.split('').reverse().join('')
-        }
+         message: 'hello',
+         number: 3
        }
      })
     </script>
