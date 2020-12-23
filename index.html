@@ -13,8 +13,8 @@
 
 <body>
   <div id="app">
-    <p>{{message}}</p>
-    <p>{{number * 5}}</p>
+    <p>{{ sayHi() }}</p>
+   
 
   </div>
 
@@ -26,7 +26,11 @@
        el: '#app',
        data: {
          message: 'hello',
-         number: 3
+       }, 
+       methods: {
+         sayHi: function() {
+           return this.message;
+         }
        }
      })
     </script>
