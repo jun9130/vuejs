@@ -16,5 +16,7 @@ v-model
 v-if
 v-for
 v-on
+v-once
+v-text
 
 this
