@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title></title>
 
-    <link rel="stylesheet" href="../assets/style.css">
+    <!-- <link rel="stylesheet" href="../assets/style.css"> -->
     <style>
      
     </style>
@@ -13,8 +13,8 @@
 
 <body>
   <div id="app">
-    <p v-once>{{ message }}</p>
-    <p>{{ sayHi() }}</p>
+    <p>現在{{number}}回クリックさてれいます。</p>
+    <button v-on:click="countUp">カウントアップ</button>
   </div>
 
 
@@ -23,13 +23,12 @@
     new Vue({
       el: '#app',
       data: {
-        message: 'hello'
+        number: 0
       },
       methods: {
-        sayHi() {
-          this.message = "Vue.js"
-          return 'hi'
-        },
+        countUp: function() {
+          this.number += 1
+        }
       }
     })
     </script>

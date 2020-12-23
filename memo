@@ -11,6 +11,7 @@ let app = new Vue({
 })
 </script>
 
+ディレクティブ
 v-bind
 v-model
 v-if
