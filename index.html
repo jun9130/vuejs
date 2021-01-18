@@ -12,25 +12,20 @@
 </head>
 
 <body>
-  <div id="app">
-    <p>現在{{number}}回クリックさてれいます。</p>
-    <button v-on:click="countUp">カウントアップ</button>
+  <div id="app-3">
+    <span v-if="seen">Now you see me</span>
   </div>
-
+  
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-    new Vue({
-      el: '#app',
-      data: {
-        number: 0
-      },
-      methods: {
-        countUp: function() {
-          this.number += 1
-        }
-      }
-    })
+    let app = new Vue({
+    el: '#app',
+    data: {
+      seen: true
+    }
+  })
+
     </script>
 </body>
 
