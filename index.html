@@ -12,19 +12,19 @@
 </head>
 
 <body>
-  <div id="app-3">
-    <span v-if="seen">Now you see me</span>
+  <div id="app">
+    {{ message }}
   </div>
   
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
-    let app = new Vue({
-    el: '#app',
-    data: {
-      seen: true
-    }
-  })
+    var app = new Vue ({
+      el: '#app',
+      data: {
+        message: "OK"
+      }
+    })
 
     </script>
 </body>
