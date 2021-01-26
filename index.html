@@ -13,8 +13,8 @@
 
 <body>
   <div id="app">
-    {{ test }}
-    <h1>{{ message }}</h1>
+    {{ text }}
+    <button v-on:click="test()">ボタン</button>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -22,8 +22,12 @@
     const app = new Vue ({
       el: '#app',
       data: {
-        message: 'Hello Vue!',
-        test: 'テスト'
+        text: 'hello'
+      },
+      methods: {
+        test: function(texts) {
+          this.text = 'click!!';
+        }
       }
     })
   </script>
