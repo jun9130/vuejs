@@ -13,23 +13,31 @@
 
 <body>
   <div id="app">
-    {{ text }}
-    <button v-on:click="test()">ボタン</button>
+    <input v-model="addItemValue">
+    <p>{{ addItemValue }}</p>
+    <button v-on:click="addItemFunction()">アイテムを追加する</button>
+   <ul>
+     <li v-for="(item, itemIndex) in items" :key="itemIndex">
+       {{ item }}
+     </li>
+   </ul>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script>
-    const app = new Vue ({
-      el: '#app',
-      data: {
-        text: 'hello'
-      },
-      methods: {
-        test: function(texts) {
-          this.text = 'click!!';
-        }
+   const app = new Vue ({
+     el: '#app',
+     data: {
+       items: ["りんご", "みかん", "ばなな"],
+       addItemValue: ''
+     },
+     methods: {
+      addItemFunction: function() {
+        this.items.push(this.addItemValue)
+        this.addItemValue = ""
       }
-    })
+     }
+   })
   </script>
 </body>
 
