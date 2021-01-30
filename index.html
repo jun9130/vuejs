@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-
     <!-- <link rel="stylesheet" href="../assets/style.css"> -->
     <style>
      
@@ -13,32 +12,12 @@
 
 <body>
   <div id="app">
-    <input v-model="addItemValue">
-    <p>{{ addItemValue }}</p>
-    <button v-on:click="addItemFunction()">アイテムを追加する</button>
-   <ul>
-     <li v-for="(item, itemIndex) in items" :key="itemIndex">
-       {{ item }}
-     </li>
-   </ul>
+    <p>{{ number }}</p>
+    <button v-on:click="addOne">+1</button>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-  <script>
-   const app = new Vue ({
-     el: '#app',
-     data: {
-       items: ["りんご", "みかん", "ばなな"],
-       addItemValue: ''
-     },
-     methods: {
-      addItemFunction: function() {
-        this.items.push(this.addItemValue)
-        this.addItemValue = ""
-      }
-     }
-   })
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>
