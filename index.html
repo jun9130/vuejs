@@ -12,11 +12,12 @@
 
 <body>
   <div id="app">
-    <span>v-modelあり</span><input type="text" v-model="message">
-    <p>{{ message }}</p>
-    <hr>
-    <span>v-modelなし</span><input type="text">
-    <p>{{ text }}</p>
+    <ul v-for="week in weeks">
+      <li>{{ week }}</li>
+    </ul>
+    <p v-for="value, key in memoLists">
+      {{ key }}: {{ value}}
+    </p>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

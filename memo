@@ -12,12 +12,14 @@ let app = new Vue({
 </script>
 
 ディレクティブ
+v-on 
+v-model 双方向バインディング
+v-for 
+配列の中身の取り出し "変数　in　配列"
+オブジェクトの中身の取り出し "バリュー用の変数,　キー用の変数　in　オブジェクト""
+
 v-bind
-v-model
 v-if
-v-for
-v-on
 v-once
 v-text
-
 this

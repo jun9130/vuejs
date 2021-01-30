@@ -1,7 +1,7 @@
 const app = new Vue({
-  el:'#app',
+  el: '#app',
   data: {
-    message: 'こんにちは',
-    text: '反映されない'
+    weeks: ['月', '火', '水', '木', '金', '土', '日'],
+    memoLists: {title: '1月1日', text: 'あけましておめでとう'}
   }
-});
+})
