@@ -1,6 +1,6 @@
 const app = new Vue({
   el: '#app',
   data: {
-    html: '<h1>h1です</h1>'
+    url: 'https://www.yahoo.co.jp/'
   }
 })
