@@ -12,12 +12,9 @@
 
 <body>
   <div id="app">
-    <ul v-for="week in weeks">
-      <li>{{ week }}</li>
-    </ul>
-    <p v-for="value, key in memoLists">
-      {{ key }}: {{ value}}
-    </p>
+    <p>{{ message }}</p>
+    <button v-on:click="UpperCase">大文字</button>
+    <button v-on:click="LowerCase">小文字</button>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

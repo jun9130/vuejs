@@ -3,7 +3,7 @@
 </div>
 
 <script>
-let app = new Vue({
+const app = new Vue({
   el: '#app', //el:はelement
   data: {
     message: 'Hello Vue!'
@@ -12,11 +12,11 @@ let app = new Vue({
 </script>
 
 ディレクティブ
-v-on 
+v-on click
 v-model 双方向バインディング
-v-for 
+v-for 繰り返し
 配列の中身の取り出し "変数　in　配列"
-オブジェクトの中身の取り出し "バリュー用の変数,　キー用の変数　in　オブジェクト""
+オブジェクトの中身の取り出し "valueの変数,　keyの変数　in　オブジェクト""
 
 v-bind
 v-if
