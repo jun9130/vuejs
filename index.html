@@ -12,8 +12,10 @@
 
 <body>
   <div id="app">
-    <a v-bind:[attribute]="url">yahoo</a>
-    <a v-bind="twitterObject">Twitter</a>
+    <p>現在{{ number }}回クリックされています</p>
+    <button v-on:click="countUp">カウントアップ</button>
+    <p v-on:mousemove="changeMousePosition">マウスを乗せてください</p>
+    <p>X:{{ x }} Y:{{ y }}</p>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

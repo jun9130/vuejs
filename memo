@@ -21,6 +21,7 @@ v-for 繰り返し
 v-bind
 v-if
 v-once
+eventオブジェクト
 
 v-text
 v-html

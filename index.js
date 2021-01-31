@@ -1,11 +1,18 @@
 const app = new Vue({
   el: '#app',
   data: {
-    url: 'https://www.yahoo.co.jp/',
-    attribute: 'href',
-    twitterObject: {
-      href: 'https://twitter.com',
-      id: 19
+    number: 0,
+    x: 0,
+    y: 0
+  },
+  methods: { 
+    countUp: function() {
+      this.number += 1
+    },
+    changeMousePosition: function(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
+
     }
   }
 })
