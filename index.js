@@ -4,11 +4,9 @@ const app = new Vue({
     message: 'apple'
   },
   methods: {
-    UpperCase: function() {
-      this.message = this.message.toUpperCase()
-    },
-    LowerCase: function() {
-      this.message = this.message.toLowerCase()
+    sayHi() {
+      this.message = 'Hello'
+      return 'Hi'
     }
   }
 })

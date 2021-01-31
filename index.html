@@ -12,9 +12,8 @@
 
 <body>
   <div id="app">
-    <p>{{ message }}</p>
-    <button v-on:click="UpperCase">大文字</button>
-    <button v-on:click="LowerCase">小文字</button>
+    <p v-once>{{ message }}</p>
+    <p>{{ sayHi() }}</p>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
