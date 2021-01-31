@@ -6,8 +6,8 @@ const app = new Vue({
     y: 0
   },
   methods: { 
-    countUp: function() {
-      this.number += 1
+    countUp: function(times) {
+      this.number += 1 * times
     },
     changeMousePosition: function(event) {
       this.x = event.clientX;
