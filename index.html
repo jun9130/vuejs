@@ -12,8 +12,8 @@
 
 <body>
   <div id="app">
-    <p v-once>{{ message }}</p>
-    <p>{{ sayHi() }}</p>
+    <div>{{ html }}</div>
+    <div v-html="html">{{ html }}</div>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

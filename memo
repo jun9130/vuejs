@@ -22,4 +22,4 @@ v-bind
 v-if
 v-once
 v-text
-this
+v-html
