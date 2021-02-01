@@ -25,3 +25,7 @@ eventオブジェクト
 
 v-text
 v-html
+
+イベント修飾子
+.stop 
+.prevent
