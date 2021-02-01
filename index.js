@@ -12,7 +12,9 @@ const app = new Vue({
     changeMousePosition: function(event) {
       this.x = event.clientX;
       this.y = event.clientY;
-
+    },
+    myAlert() {
+      alert('アラート');
     }
   }
 })

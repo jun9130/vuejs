@@ -29,3 +29,7 @@ v-html
 イベント修飾子
 .stop 
 .prevent
+
+キー修飾子
+.enter
+.space
