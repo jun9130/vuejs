@@ -33,3 +33,5 @@ v-html
 キー修飾子
 .enter
 .space
+
+computedプロパティ
