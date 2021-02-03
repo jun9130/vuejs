@@ -8,9 +8,12 @@ const app = new Vue({
       return this.counter > 3 ? '3より上' : '3以下'
     }
   },
-  methods: {
-    lessThanThreeMethod: function() {
-      return this.counter > 3 ? '3より上' : '3以下'
+  watch: {
+    counter: function() {
+      const vm = this;
+      setTimeout(function(){
+        vm.counter = 0
+      }, 3000)
     }
   }
 })
