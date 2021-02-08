@@ -6,17 +6,19 @@
     <title></title>
     <!-- <link rel="stylesheet" href="../assets/style.css"> -->
     <style>
-     
+     .red {
+       color: red;
+     }
+     .blue {
+       background-color: blue;
+     }
     </style>
 </head>
 
 <body>
   <div id="app">
-    <p>{{ counter }}</p>
-    <button v-on:click="countUp">+1</button>
-    <button v-on:click="countUp()">+1</button>
-    <p>{{ doubleCounterComputed }}</p>
-    <p>{{ doubleCounterMethods() }}</p>
+      <h1 :class=classObject>Vue</h1>
+      <button v-on:click="isActive = !isActive">切り替え</button>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
