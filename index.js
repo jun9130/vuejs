@@ -1,7 +1,9 @@
 const app = new Vue({
   el: '#app',
   data: {
-    isActive: true
+    isActive: true,
+    color: 'red',
+    bg: 'blue'
   },
   computed: {
     classObject: function() {

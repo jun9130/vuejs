@@ -19,6 +19,8 @@
   <div id="app">
       <h1 :class=classObject>Vue</h1>
       <button v-on:click="isActive = !isActive">切り替え</button>
+  
+  <h1 :class="[color, bg]">hello</h1>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
