@@ -4,6 +4,9 @@ const app = new Vue({
     styleObject: {
       color: 'red',
       'background-color': 'blue'
+    },
+    baseStyles : {
+      fontSize: "60px"
     }
   }
   })
