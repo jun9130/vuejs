@@ -1,7 +1,9 @@
 const app = new Vue({
   el: '#app',
   data: {
-    textColor: "red",
-    bgcolor: "blue"
+    styleObject: {
+      color: 'red',
+      'background-color': 'blue'
+    }
   }
   })
