@@ -11,13 +11,11 @@
 
 <body>
   <div id="app">
-    <ul>
-      <li v-for="item in items">
-        <p>{{ item.id }}</p>
-        <p>{{ item.title }}</p>
-      </li>
-    </ul>
+    <p>{{ counter }}</p>
+    <button v-on:click="add">追加(関数)</button>
+    <button v-on:click="counter++">追加(JS)</button>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script src="index.js"></script>
