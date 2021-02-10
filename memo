@@ -11,6 +11,8 @@ const app = new Vue({
 })
 </script>
 
+テンプレート構文
+
 ディレクティブとは→Vue.jsの特別な属性
 v-on click
 v-model 双方向バインディング

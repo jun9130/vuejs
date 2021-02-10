@@ -1,12 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
-    styleObject: {
-      color: 'red',
-      'background-color': 'blue'
-    },
-    baseStyles : {
-      fontSize: "60px"
-    }
+    message: 'OK',
+    isChecked: true
   }
-  })
+})
