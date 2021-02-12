@@ -13,7 +13,12 @@
   <div id="app">
     <ul>
       <li v-for="(fruit, index) in fruits">
-        {{ index + 1}} {{ fruit }}
+        ({{index + 1}}) {{ fruit }}
+      </li>
+    </ul>
+    <ul>
+      <li v-for="value in object">
+        {{ value }}
       </li>
     </ul>
   </div>
