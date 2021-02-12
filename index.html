@@ -11,11 +11,9 @@
 
 <body>
   <div id="app">
-    <p>{{ counter }}</p>
-    <button v-on:click="add">追加(関数)</button>
-    <button v-on:click="counter++">追加(JS)</button>
+   <p>{{ message }}</p>
+   <input v-model="message">
   </div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script src="index.js"></script>
