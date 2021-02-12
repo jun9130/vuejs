@@ -17,8 +17,8 @@
       </li>
     </ul>
     <ul>
-      <li v-for="value in object">
-        {{ value }}
+      <li v-for="(value, key, index) in object">
+        {{ index }} {{ key }}: {{ value }}
       </li>
     </ul>
   </div>
