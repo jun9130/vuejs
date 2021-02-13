@@ -12,23 +12,12 @@
 <body>
   <div id="app">
     <ul>
-      <li v-for="(fruit, index) of fruits">
-        ({{index + 1}}) {{ fruit }}
-      </li>
+      <div v-for="fruit in fruits" v-bind:key="fruit">
+        <p>{{ fruit }}</p>
+        <input type="text">
+      </div>
     </ul>
-    <ul>
-      <template v-for="fruit of fruits">
-        <li>
-          {{ fruit }}
-        </li>
-        <hr>
-      </template> 
-    </ul>
-    <ul>
-      <li v-for="n of 100">
-        {{ n }}
-      </li>
-    </ul>
+    <button v-on:click="remove">先頭を削除</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
