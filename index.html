@@ -11,13 +11,10 @@
 
 <body>
   <div id="app">
-    <ul>
-      <div v-for="fruit in fruits" v-bind:key="fruit">
-        <p>{{ fruit }}</p>
-        <input type="text">
-      </div>
-    </ul>
-    <button v-on:click="remove">先頭を削除</button>
+    <p>{{ message }}</p>
+  </div>
+  <div id="app2">
+    <p>{{ message }}</p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
