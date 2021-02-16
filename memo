@@ -39,3 +39,4 @@ v-html
 computedプロパティ
 
 Vueインスタンス new Vue
+$data
