@@ -5,7 +5,12 @@ const data = {
 
 const app = new Vue({
   el: '#app',
-  data: data
+  data: data,
+  computed: {
+    myData: function() {
+      return this.$data;
+    }
+  }
 })
 
 
