@@ -20,7 +20,7 @@ v-for 繰り返し
 配列の中身の取り出し "変数　in　配列"
 オブジェクトの中身の取り出し "valueの変数,　keyの変数　in　オブジェクト""
 
-v-bind
+v-bind 属性etc
 v-if
 v-once
 eventオブジェクト

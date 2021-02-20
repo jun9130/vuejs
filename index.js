@@ -1,10 +1,10 @@
-const data = {
-  message: "OK",
-  name: "ito"
+var data = {
+  message: 'こんにちは',
+  name: 'さとう'
 }
 
-const app = new Vue({
-  el: '#app',
+var app = new Vue({
+  // el: '#app',
   data: data,
   computed: {
     myData: function() {
@@ -13,7 +13,4 @@ const app = new Vue({
   }
 })
 
-
-console.log(data);
-
-console.log(data === app.$data);
+app.$mount('#app');
