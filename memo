@@ -40,3 +40,4 @@ computedプロパティ
 
 Vueインスタンス new Vue
 $data
+コンポーネント component

@@ -3,6 +3,15 @@ var data = {
   name: 'さとう'
 }
 
+Vue.component('hello', {
+  template: '<p>コンポーネント</p>'
+});
+
+
+
+
+
+
 var app = new Vue({
   // el: '#app',
   data: data,
@@ -78,3 +87,4 @@ new Vue({
     }
   }
 })
+
