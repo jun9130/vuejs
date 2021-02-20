@@ -13,6 +13,9 @@ var app = new Vue({
   }
 })
 
+app.$mount('#app')
+
+
 new Vue({
   el: '#app2',
   data: {
@@ -21,4 +24,20 @@ new Vue({
   template: ' <h1>こんにちは、{{name}}さん</h1>'
 })
 
-app.$mount('#app');
+new Vue({
+  data: {
+    name: 'しおだ'
+  },
+  render: function(createElement) {
+    console.log(createElement('h1', 'こんにちは、' + this.name　+ 'さん'));
+    return createElement('h1', 'こんにちは、' + this.name　+ 'さん');
+  },
+}).$mount('#app3')
+
+
+
+// 補足
+const div = document.createElement('div');
+console.log(div);
+console.log(document);
+console.dir(document);
