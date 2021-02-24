@@ -41,3 +41,4 @@ computedプロパティ
 Vueインスタンス new Vue
 $data
 コンポーネント component
+ローカル登録、グローバル登録
