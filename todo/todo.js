@@ -1,32 +1,20 @@
-// const app = new Vue({
-//   el: '#app',
-//   data: {
-//     items: [
-//       { title: '掃除をする', isChecked: true },
-//       { title: 'ランニング', isChecked: true },
-//       { title: '買い物に行く', isChecked: true }
-//     ],
-//     newItemTitle: ""
-//   },
-//   methods: {
-//     addTodo: function() {
-//       this.items.push({
-//         title: this.newItemTitle,
-//         isChecked: false
-//       });
-//       this.newItemTitle = "";
-//     },
-//     deleteTodo: function(){
-//       this.items = this.items.filter(function (item) {
-//         return item.isChecked === false;
-//       });
-//     },
-//   }
-// })
-
-const vm = new Vue({
-  el: '#demo',
+const app = new Vue({
+  el: '#app',
   data: {
-    show: true
+    items: [
+      {task: 'ランニングをする', checked: false},
+      {task: '掃除をする', checked: false},
+      {task: 'お弁当を作る', checked: false}
+    ],
+    newTask: ''
+  },
+  methods: {
+    addTodo: function(){
+      this.items.push({
+        task: this.newTask,
+        checked: false
+      });
+      this.newTask = '';
+    },
   }
 })
