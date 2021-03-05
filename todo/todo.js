@@ -9,7 +9,7 @@ const app = new Vue({
     newTask: ''
   },
   methods: {
-    addTodo: function(){
+    addTask: function(){
       this.items.push({
         task: this.newTask,
         checked: false

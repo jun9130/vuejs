@@ -12,12 +12,14 @@
     <div class="title">
       <h1>ToDo List</h1>
     </div>
-    <div class="new-todo">
-      <input type="text" placeholder="New Task" v-model="newTask" v-on:keyup.enter="addTodo">
+    <div class="new-task">
+      <input type="text" placeholder="New Task" v-model="newTask" v-on:keyup.enter="addTask">
     </div>
     <ul>
       <li v-for="item in items">
-        <input type="checkbox" v-model="item.checked"> {{ item.task }}
+        <label v-bind:class="{ done: item.checked}">
+          <input type="checkbox" v-model="item.checked"> {{ item.task }}
+        </label>
       </li>
     </ul>
   </div>
