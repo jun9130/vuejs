@@ -3,23 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Vue.js</title>
     <!-- <link rel="stylesheet" href="../assets/style.css"> -->
     <style>
+      .active {
+        font-size: 100px;
+        color: red;
+      }
     </style>
 </head>
 
 <body>
   <div id="app">
-    <my-conmponent></my-conmponent>
-    <my-conmponent></my-conmponent>
-    <my-conmponent></my-conmponent>
-  </div>
-
-  <div id="app2">
-    <my-conmponent></my-conmponent>
-    <my-conmponent></my-conmponent>
-    <my-conmponent></my-conmponent>
+    <div v-bind:class="{active: isActive }">
+      v-bind
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
