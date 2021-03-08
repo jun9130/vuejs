@@ -1,6 +1,11 @@
 const app = new Vue({
   el: '#app',
   data: {
-    isActive: true
-  }
+    counter: 0
+  },
+  methods: {
+    add: function() {
+      this.counter++
+    },
+  },
 })
