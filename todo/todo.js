@@ -1,11 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
-    items: [
-      {task: 'ランニングをする', checked: false},
-      {task: '掃除をする', checked: false},
-      {task: 'お弁当を作る', checked: false}
-    ],
+    items: [ ],
     newTask: ''
   },
   methods: {
@@ -16,5 +12,10 @@ const app = new Vue({
       });
       this.newTask = '';
     },
+    deleteTask: function(){
+      this.items = this.items.filter(function (item) {
+        return item.checked === false; 
+      });
+    }
   }
 })
