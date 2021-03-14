@@ -1,4 +1,4 @@
-# ToDo List
+# ToDo リスト
 
 ![1d3cc46d7bb28358454b283dc0718ca5](https://user-images.githubusercontent.com/53207844/110335760-8bc71900-8067-11eb-9e11-ccbd2910186e.gif)
 
